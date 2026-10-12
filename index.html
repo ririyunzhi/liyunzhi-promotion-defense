@@ -256,6 +256,101 @@
  .goal-detail h3{white-space:normal}
 }
 
+/* ===== Round 4: KOL 项目业绩贡献（02 / 业绩产出）===== */
+.kpi-slide .performance-period{margin-top:20px}
+.kpi-slide .kpi-v2{margin-top:16px}
+.kol-module{margin-top:16px;border:1px solid #e2e7ee;border-radius:6px;background:#fff;box-shadow:0 10px 26px rgba(31,35,40,.05);overflow:hidden}
+.kol-head{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:11px 18px;border-bottom:1px solid #eef1f4}
+.kol-head .mini-label{margin:0 0 2px;font-size:10px}
+.kol-head h2{margin:0;font-size:17px;color:#202b3c;letter-spacing:-.01em}
+.kol-head>span{font-size:10.5px;color:#8a94a0;font-weight:600;text-align:right;max-width:520px}
+.kol-body{display:grid;grid-template-columns:1fr 1.55fr;gap:18px;padding:14px 18px 15px;align-items:stretch}
+.kol-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.kol-stats>div{background:#f7f9fb;border:1px solid #e6eaef;border-radius:5px;padding:10px 12px;display:flex;flex-direction:column;justify-content:center}
+.kol-stats span{font-size:10.5px;color:#69707a;font-weight:700;letter-spacing:.04em}
+.kol-stats strong{font-size:20px;color:#202b3c;margin:5px 0 3px;letter-spacing:-.02em;font-variant-numeric:tabular-nums;white-space:nowrap}
+.kol-stats>div:nth-child(2) strong{color:var(--red)}
+.kol-stats small{font-size:9.5px;color:#99a2ac}
+.kol-table{min-width:0;display:flex;flex-direction:column;justify-content:center;overflow-x:auto}
+.kol-table table{width:100%;border-collapse:collapse;min-width:330px}
+.kol-table th{font-size:10px;color:#8a94a0;text-align:left;font-weight:750;letter-spacing:.06em;padding:3px 8px;border-bottom:1px solid #e6eaef}
+.kol-table th:not(:first-child){text-align:right}
+.kol-table td{padding:5px 8px;font-size:12px;color:#3a444e;border-bottom:1px dashed #eef1f4;vertical-align:middle}
+.kol-table td:not(:first-child){text-align:right;font-variant-numeric:tabular-nums}
+.kol-table td b{color:#7d1219;font-weight:800}
+.kol-proj{display:flex;flex-direction:column;gap:3px;font-weight:700;color:#202b3c;min-width:0}
+.kol-proj .bars{display:flex;flex-direction:column;gap:2px}
+.kol-proj .bar-inc,.kol-proj .bar-cst{display:block;height:3px;border-radius:99px}
+.kol-proj .bar-inc{background:linear-gradient(90deg,#e60012,#fc626c)}
+.kol-proj .bar-cst{background:#cfd6de}
+.kol-total-row td{background:#fff7f8;font-weight:800;color:#202b3c;border-top:1px solid #f3d3d6;border-bottom:none}
+.kol-total-row td:first-child{color:#b31b22}
+
+/* ===== Round 4: 未来规划首模块（10 / 未来规划）===== */
+.roadmap-intro{margin-top:22px;border:1px solid #e3e8ee;border-radius:6px;background:#fff;box-shadow:0 10px 26px rgba(31,35,40,.05);overflow:hidden}
+.roadmap-intro-head{display:flex;align-items:center;gap:14px;padding:12px 18px;border-bottom:1px solid #eef1f4}
+.ri-module{width:44px;height:44px;border-radius:6px;background:linear-gradient(135deg,#e60012,#f52b32);color:#fff;font-size:16px;font-weight:800;display:flex;align-items:center;justify-content:center;letter-spacing:-.02em;flex:none}
+.roadmap-intro-head h2{margin:0;font-size:20px;color:#202b3c;letter-spacing:-.02em}
+.roadmap-intro-head em{font-style:normal;margin-left:auto;font-size:11px;color:#8a94a0}
+.roadmap-intro-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;padding:14px 18px 16px}
+.roadmap-intro-grid article{background:#f7f9fb;border:1px solid #e8ecf1;border-top:3px solid #e60012;border-radius:5px;padding:14px 16px;display:flex;flex-direction:column;min-width:0}
+.ri-tag{display:inline-block;align-self:flex-start;font-size:10px;font-weight:800;letter-spacing:.08em;color:#b31b22;background:#fdecee;border:1px solid #f5d4d8;border-radius:999px;padding:3px 10px;margin-bottom:9px}
+.roadmap-intro-grid h3{margin:0 0 8px;font-size:15px;color:#202b3c}
+.roadmap-intro-grid p{margin:0;font-size:11.5px;line-height:1.75;color:#5a6570}
+
+/* ===== Round 4: 短屏压缩（笔记本 1366×768 等）===== */
+@media(max-height:820px) and (min-width:721px){
+ .kpi-slide .heading .eyebrow{margin-bottom:10px}
+ .kpi-slide .heading h1{font-size:46px}
+ .kpi-slide .heading .lead{font-size:14px;margin-top:10px;line-height:1.6}
+ .kpi-slide .performance-period{margin-top:14px;font-size:12px}
+ .kpi-slide .kpi-v2{margin-top:12px;gap:14px}
+ .kpi-slide .kpi-v2 .kpi-card{min-height:118px;padding:15px 18px}
+ .kpi-slide .kpi-v2 .kpi-card strong{margin:9px 0 7px;font-size:clamp(26px,3vw,46px)}
+ .kpi-slide .kpi-v2 .kpi-card:nth-child(2) strong{font-size:clamp(32px,3.8vw,54px)}
+ .kol-module{margin-top:13px}
+ .kol-head{padding:9px 16px}
+ .kol-head h2{font-size:16px}
+ .kol-head>span{font-size:10px}
+ .kol-body{padding:10px 14px 11px;gap:14px}
+ .kol-stats{gap:8px}
+ .kol-stats>div{padding:8px 10px}
+ .kol-stats strong{font-size:17px;margin:4px 0 2px}
+ .kol-table td{padding:4px 6px;font-size:11.5px}
+ .kol-table th{padding:2px 6px}
+ .kol-proj .bars{gap:1px}
+ .kol-proj .bar-inc,.kol-proj .bar-cst{height:2.5px}
+ .kpi-slide .performance-bottom{margin-top:13px;padding-top:11px;font-size:11.5px}
+ .roadmap-intro{margin-top:14px}
+ .roadmap-intro-head{padding:9px 16px;gap:12px}
+ .ri-module{width:38px;height:38px;font-size:14px}
+ .roadmap-intro-head h2{font-size:18px}
+ .roadmap-intro-head em{font-size:10.5px}
+ .roadmap-intro-grid{gap:10px;padding:10px 14px 12px}
+ .roadmap-intro-grid article{padding:11px 13px}
+ .roadmap-intro-grid h3{font-size:14px;margin-bottom:6px}
+ .roadmap-intro-grid p{font-size:11px;line-height:1.65}
+ .roadmap-v2{margin-top:13px;gap:13px}
+ .roadmap-v2 article{min-height:220px;padding:16px 16px}
+ .roadmap-v2 h2{font-size:19px;line-height:1.4;margin:10px 0 12px;min-height:0}
+ .roadmap-number{font-size:30px;margin-bottom:10px}
+ .roadmap-v2 ul{font-size:12px;line-height:1.6;gap:6px}
+ .roadmap-v2 .roadmap-result{padding-top:10px;font-size:10.5px}
+}
+
+/* ===== Round 4: 窄屏适配 ===== */
+@media(max-width:720px){
+ .kol-head{flex-direction:column;align-items:flex-start;gap:6px}
+ .kol-head>span{text-align:left}
+ .kol-body{grid-template-columns:1fr}
+ .kol-stats{grid-template-columns:repeat(3,1fr)}
+ .roadmap-intro-grid{grid-template-columns:1fr}
+ .roadmap-intro-head em{display:none}
+}
+@media(max-width:1099px) and (min-width:721px){
+ .kol-body{grid-template-columns:1fr 1.3fr}
+}
+
 </style>
   </head>
   <body>
@@ -269,7 +364,7 @@ const DEFAULT_DATA = {
     "date": "2026.10.12",
     "version": "2026 转正答辩 · 本地离线版",
     "sourceNote": "个人经历依据《李昀芷 转正答辩 10.12》及本人补充整理；业绩统计期间为 2026 年 5–9 月（USD）。",
-    "contentRevision": "2026-10-12-round3-v1"
+    "contentRevision": "2026-10-12-round4-v1"
   },
   "settings": {
     "reducedMotion": false
@@ -457,6 +552,35 @@ const DEFAULT_DATA = {
       "sourceNote": "已按运营看板明细核对"
     }
   ],
+
+  "kolPerformance": {
+    "total": {
+      "income": 71314.84,
+      "cost": 56454.34,
+      "roi": 1.26,
+      "note": "覆盖 3 项目系列 · 9 笔订单"
+    },
+    "projects": [
+      {
+        "name": "DJI（系列）",
+        "income": 28600.0,
+        "cost": 21372.0,
+        "roi": 1.34
+      },
+      {
+        "name": "Once Human",
+        "income": 24800.0,
+        "cost": 20400.0,
+        "roi": 1.22
+      },
+      {
+        "name": "燕云十六声",
+        "income": 17914.84,
+        "cost": 14682.34,
+        "roi": 1.22
+      }
+    ]
+  },
   "timeline": [],
   "projects": [
     {
@@ -902,6 +1026,28 @@ const DEFAULT_DATA = {
       "review": "重要信息回到原始文档核实，并持续维护知识库"
     }
   ],
+  "roadmapIntro": {
+    "moduleNo": "01",
+    "title": "内部资源沉淀与跨项目复用",
+    "subtitle": "沉淀可复用的组织能力，支撑日区多项目增长",
+    "cards": [
+      {
+        "tag": "模式复用",
+        "title": "UGC 运营模式复用",
+        "body": "将现有 UGC 招募、激励、内容管理及结算机制标准化，探索向《遗忘之海》及其他日区项目复制。"
+      },
+      {
+        "tag": "资源沉淀",
+        "title": "达人资源池共建",
+        "body": "整合现有 KOC / UGC 达人资源，建立统一的分层管理与合作机制，支持有道日区多项目资源复用。"
+      },
+      {
+        "tag": "AI 提效",
+        "title": "AI 工作流优化",
+        "body": "探索 AI 在达人筛选、内容审核、数据整理及日常运营中的应用，减少重复性工作，提升团队运营效率。"
+      }
+    ]
+  },
   "roadmap": [
     {
       "horizon": "持续推进",
@@ -1081,19 +1227,19 @@ const DEFAULT_DATA = {
       }
     ],
     "growth": {
-      "title": "更主动地理解与影响业务",
+      "title": "个人待发展项",
       "items": [
         [
-          "项目预算把控",
-          "在项目早期建立预算拆解与关键节点复盘。"
+          "01｜业务决策与预算管理",
+          "目前以预算执行为主，前期成本规划及增量预算争取经验仍需积累。未来结合项目 ROI 与历史数据，提升独立报价、预算谈判及利润把控能力，主动为项目争取更多业务机会。"
         ],
         [
-          "预算争取与商业判断",
-          "在方案沟通中更早识别投入、价值与可争取空间。"
+          "02｜客户关系经营",
+          "目前偏重需求响应与项目交付，对客户长期规划及潜在需求挖掘仍有提升空间。未来加强主动提案与定期复盘，推动预算扩充及持续合作。"
         ],
         [
-          "客户关系经营",
-          "将稳定交付延伸为长期信任与合作机会。"
+          "03｜从执行向管理转型",
+          "在现有团队协调经验的基础上，进一步加强任务授权、团队自主交付能力及项目整体进度把控，逐步提升资源统筹与团队管理能力。"
         ]
       ]
     },
@@ -1199,6 +1345,10 @@ function migrateAssetRevision(data) {
   });
   if (!Array.isArray(next.review.goals) || !next.review.goals.length) next.review.goals = clone(DEFAULT_DATA.review.goals);
   if (!next.review.summary) next.review.summary = DEFAULT_DATA.review.summary;
+  // (E) 第四轮：KOL 业绩模块、个人待发展项、未来规划首模块
+  if (!next.kolPerformance) next.kolPerformance = clone(DEFAULT_DATA.kolPerformance);
+  if (!next.roadmapIntro) next.roadmapIntro = clone(DEFAULT_DATA.roadmapIntro);
+  if (next.review && next.review.growth) next.review.growth.items = clone(DEFAULT_DATA.review.growth.items);
   next.meta.contentRevision = DEFAULT_DATA.meta.contentRevision;
   return next;
 }
@@ -1288,7 +1438,12 @@ function renderAbout(){
 
 function renderKpi(){
  const s=performanceSummary();const cards=[{id:'amount',label:'累计上线金额',value:s.amount,prefix:'$',note:'2026 年 5–9 月 · USD'},{id:'roi',label:'综合 ROI',value:s.roi,prefix:'',note:'总上线金额 ÷ 总上线成本'},{id:'cost',label:'累计上线成本',value:s.cost,prefix:'$',note:'2026 年 5–9 月 · USD'}];
- return slideShell(`${accentTitle('02 / PERFORMANCE','业绩产出','完成复杂项目的稳定交付')}<div class="performance-period">2026 年 5–9 月 <span>USD</span></div><div class="kpi-grid kpi-v2">${cards.map(c=>`<article class="kpi-card"><span>${c.label}</span><strong ${c.value===null?'':`data-count="${c.value}"`} data-prefix="${c.prefix}" data-id="${c.id}">${c.value===null?'—':c.prefix+formatNumber(c.value)}</strong><small>${c.note}</small></article>`).join('')}</div><div class="performance-bottom"><span>持续交付 · 多项目并行 · 运营闭环</span><button class="text-button" data-action="jump" data-slide="monthly">查看月度趋势 →</button></div>`,{className:'kpi-slide'});
+ const kp=state.kolPerformance||{total:{},projects:[]};const kt=kp.total||{};const kIncome=numericValue(kt.income),kCost=numericValue(kt.cost);const kRoi=kCost>0?kIncome/kCost:(kt.roi==null?null:Number(kt.roi));
+ const kStats=[{label:'KOL 总收入',value:kIncome,prefix:'$',note:'USD'},{label:'KOL 综合 ROI',value:kRoi,prefix:'',note:'总收入 ÷ 总成本'},{label:'KOL 总成本',value:kCost,prefix:'$',note:'USD'}];
+ const kRows=(kp.projects||[]).map(p=>{const inc=numericValue(p.income),cst=numericValue(p.cost);const roi=cst>0?inc/cst:null;const wi=kIncome>0?(inc/kIncome)*100:0,wc=kCost>0?(cst/kCost)*100:0;return `<tr><td class="kol-proj">${escapeHtml(p.name)}<span class="bars" aria-hidden="true"><i class="bar-inc" style="width:${wi.toFixed(1)}%"></i><i class="bar-cst" style="width:${wc.toFixed(1)}%"></i></span></td><td>$${formatNumber(inc)}</td><td>$${formatNumber(cst)}</td><td><b>${roi===null?'—':formatNumber(roi)}</b></td></tr>`;}).join('');
+ const kTotalRow=`<tr class="kol-total-row"><td>KOL 合计</td><td>$${formatNumber(kIncome)}</td><td>$${formatNumber(kCost)}</td><td><b>${kRoi===null?'—':formatNumber(kRoi)}</b></td></tr>`;
+ const kolModule=`<section class="kol-module"><header class="kol-head"><div><p class="mini-label">KOL 项目业绩贡献</p><h2>总业绩中的 KOL 业务拆分</h2></div><span>${escapeHtml(kt.note||'')} · 不与总业绩重复加总，其余为第五人格社群业务</span></header><div class="kol-body"><div class="kol-stats">${kStats.map(c=>`<div><span>${c.label}</span><strong>${c.value==null?'—':c.prefix+formatNumber(c.value)}</strong><small>${c.note}</small></div>`).join('')}</div><div class="kol-table"><table aria-label="KOL 各项目业绩"><thead><tr><th>项目</th><th>收入（USD）</th><th>成本（USD）</th><th>ROI</th></tr></thead><tbody>${kRows}${kTotalRow}</tbody></table></div></div></section>`;
+ return slideShell(`${accentTitle('02 / PERFORMANCE','业绩产出','完成复杂项目的稳定交付')}<div class="performance-period">2026 年 5–9 月 <span>USD</span></div><div class="kpi-grid kpi-v2">${cards.map(c=>`<article class="kpi-card"><span>${c.label}</span><strong ${c.value===null?'':`data-count="${c.value}"`} data-prefix="${c.prefix}" data-id="${c.id}">${c.value===null?'—':c.prefix+formatNumber(c.value)}</strong><small>${c.note}</small></article>`).join('')}</div>${kolModule}<div class="performance-bottom"><span>持续交付 · 多项目并行 · 运营闭环</span><button class="text-button" data-action="jump" data-slide="monthly">查看月度趋势 →</button></div>`,{className:'kpi-slide'});
 }
 
 function shortMoney(value) {
@@ -1359,7 +1514,9 @@ function renderSelfReview(){
  return slideShell(`${accentTitle('09 / SELF REVIEW','自我评价')}<div class="review-v2"><div class="strength-list">${r.strengths.map((s,i)=>`<article><b class="strength-index">0${i+1}</b><div><h2>${escapeHtml(s.title)}</h2><p>${escapeHtml(s.body)}</p><div class="profile-tags">${s.tags.map(t=>`<i>${escapeHtml(t)}</i>`).join('')}</div></div></article>`).join('')}</div><aside class="growth-opportunity"><p class="mini-label">待发展项</p><h2>${r.growth.title}</h2>${r.growth.items.map(x=>`<section><h3>${x[0]}</h3><p>${x[1]}</p></section>`).join('')}</aside></div>${goalsHTML}${summary}`,{className:'self-review'});
 }
 
-function renderRoadmap(){return slideShell(`${accentTitle('10 / ROADMAP','未来规划')}<div class="roadmap-v2">${state.roadmap.map((r,i)=>`<article><p class="roadmap-number">0${i+1}</p><span class="roadmap-horizon">${escapeHtml(r.horizon)}</span><h2>${escapeHtml(r.title)}</h2><ul>${r.actions.map(a=>`<li>${escapeHtml(a)}</li>`).join('')}</ul><p class="roadmap-result">${escapeHtml(r.metric)}</p></article>`).join('')}</div>`,{className:'roadmap'});}
+function renderRoadmap(){const intro=state.roadmapIntro;
+ const introHtml=intro?`<section class="roadmap-intro"><header class="roadmap-intro-head"><span class="ri-module">0${escapeHtml(intro.moduleNo||'1')}</span><div><h2>${escapeHtml(intro.title)}</h2></div><em>${escapeHtml(intro.subtitle||'')}</em></header><div class="roadmap-intro-grid">${(intro.cards||[]).map(c=>`<article><span class="ri-tag">${escapeHtml(c.tag)}</span><h3>${escapeHtml(c.title)}</h3><p>${escapeHtml(c.body)}</p></article>`).join('')}</div></section>`:'';
+ return slideShell(`${accentTitle('10 / ROADMAP','未来规划')}${introHtml}<div class="roadmap-v2">${state.roadmap.map((r,i)=>`<article><p class="roadmap-number">0${i+2}</p><span class="roadmap-horizon">${escapeHtml(r.horizon)}</span><h2>${escapeHtml(r.title)}</h2><ul>${r.actions.map(a=>`<li>${escapeHtml(a)}</li>`).join('')}</ul><p class="roadmap-result">${escapeHtml(r.metric)}</p></article>`).join('')}</div>`,{className:'roadmap'});}
 
 function renderClosing(){return slideShell(`<div class="closing-layout">${brandMark(true)}<div class="closing-copy"><p class="eyebrow light">THANK YOU</p><h1>感谢指导</h1><div class="closing-rule"></div><p>${escapeHtml(state.meta.presenter)} · ${escapeHtml(state.meta.date)}</p></div><button class="qa-button" data-action="toggle-qa">Q <span>问答快捷索引</span></button></div>`,{red:true,className:'closing'});}
 
